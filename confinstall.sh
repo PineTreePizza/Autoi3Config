@@ -2,6 +2,7 @@
 #main block
 cd $HOME
 sudo pacman -S rofi
+sudo pacman -S acpi
 sudo pacman -S feh
 sudo pacman -S picom
 sudo pacman -S pcmanfm
@@ -13,13 +14,12 @@ sudo pacman -S neofetch
 sudo pacman -S lxappearance
 sudo pacman -S terminator
 sudo pacman -S qbittorrent
-sudo pacman -S virtualbox-host-modules-arch
-sudo pacman -S virtualbox
 sudo pacman -S steam
 sudo pacman -S discord
 sudo pacman -S wine-mono
 sudo pacman -S zip
 sudo pacman -S unzip
+sudo chmod +s light
 
 #git builds
 sudo pacman -S --needed base-devel git
@@ -32,8 +32,8 @@ cd $HOME
 git clone https://github.com/PineTreePizza/Linuxi3Config.git
 cd Linuxi3Config
 cd Fonts
-mv pine-fonts /usr/share/fonts/ 
-cd Linuxi3Config
+sudo mv pine-fonts /usr/share/fonts/ 
+cd $HOME/Linuxi3Config
 
 rm -R $HOME/.config/i3
 mv i3 $HOME/.config/
@@ -62,6 +62,10 @@ sudo mv Dracula /usr/share/icons/
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 cd $HOME
+
+#yay pkg
+
+yay -S dropbox
 
 #end
 sudo pacman -Syu
