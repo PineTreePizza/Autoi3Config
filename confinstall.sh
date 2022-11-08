@@ -18,6 +18,8 @@ sudo pacman -S virtualbox
 sudo pacman -S steam
 sudo pacman -S discord
 sudo pacman -S wine-mono
+sudo pacman -S zip
+sudo pacman -S unzip
 
 #git builds
 sudo pacman -S --needed base-devel git
@@ -44,11 +46,27 @@ mv rofi $HOME/.config/
 
 rm -R $HOME/.config/terminator
 mv terminator $HOME/.config/
+
+unzip gtk-master.zip
+unzip Dracula.zip
+
+sudo mkdir /usr/share/themes/
+sudo mv gtk-master /usr/share/themes/
+
+gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+
+sudo mkdir /usr/share/icons/
+sudo mv Dracula /usr/share/icons/
+
+gsettings set org.gnome.desktop.interface icon-theme "Dracula"
+
 cd $HOME
 
-
-
-cd $HOME
 #end
 sudo pacman -Syu
-sudo yay -Syu 
+sudo yay -Syu
+sudo pacman -Syyuu
+sudo yay -Syyuu
+
+reboot
