@@ -19,7 +19,7 @@ sudo pacman -S discord
 sudo pacman -S wine-mono
 sudo pacman -S zip
 sudo pacman -S unzip
-sudo chmod +s light
+sudo chmod +s /bin/light
 
 #git builds
 sudo pacman -S --needed base-devel git
@@ -69,8 +69,8 @@ yay -S dropbox
 
 #end
 sudo pacman -Syu
-sudo yay -Syu
+yay -Syu
 sudo pacman -Syyuu
-sudo yay -Syyuu
+yay -Syyuu
 
 reboot
