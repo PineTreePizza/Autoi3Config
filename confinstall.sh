@@ -23,6 +23,11 @@ sudo pacman -S lmms
 sudo pacman -S zip
 sudo pacman -S unzip
 sudo pacman -S emacs
+sudo pacman -S godot
+sudo pacman -S easyeffects
+sudo pacman -S fish
+sudo pacman -S obs-studio
+sudo pacman -S fuse
 
 sudo chmod +s /bin/light
 
