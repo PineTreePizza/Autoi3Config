@@ -22,13 +22,9 @@ sudo pacman -S mono
 sudo pacman -S lmms
 sudo pacman -S zip
 sudo pacman -S unzip
+sudo pacman -S emacs
+
 sudo chmod +s /bin/light
-
-#sublime text
-
-curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
-echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
-sudo pacman -Syu sublime-text
 
 #git builds
 sudo pacman -S --needed base-devel git
@@ -56,6 +52,8 @@ mv rofi $HOME/.config/
 rm -R $HOME/.config/terminator
 mv terminator $HOME/.config/
 
+cd $HOME
+
 unzip gtk-master.zip
 unzip Dracula.zip
 
@@ -69,6 +67,9 @@ sudo mkdir /usr/share/icons/
 sudo mv Dracula /usr/share/icons/
 
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
+
+sudo mkdir $HOME/emacs.d
+sudo mv init.el $HOME/emacs.d
 
 cd $HOME
 
