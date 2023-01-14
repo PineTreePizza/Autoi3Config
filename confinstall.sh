@@ -28,6 +28,7 @@ sudo pacman -S easyeffects
 sudo pacman -S fish
 sudo pacman -S obs-studio
 sudo pacman -S fuse
+sudo pacman -S file-roller
 
 sudo chmod +s /bin/light
 
