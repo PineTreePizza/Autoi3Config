@@ -75,6 +75,7 @@ sudo mv Dracula /usr/share/icons/
 gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
 sudo mkdir $HOME/emacs.d
+sudo rm init.el $HOME/emacs.d
 sudo mv init.el $HOME/emacs.d
 
 cd $HOME
