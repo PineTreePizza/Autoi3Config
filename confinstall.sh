@@ -42,6 +42,7 @@ cd $HOME
 
 git clone https://github.com/PineTreePizza/Linuxi3Config.git
 cd Linuxi3Config
+./itch-install
 cd Fonts
 sudo mv pine-fonts /usr/share/fonts/ 
 cd $HOME/Linuxi3Config
