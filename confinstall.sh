@@ -29,6 +29,7 @@ sudo pacman -S fish
 sudo pacman -S obs-studio
 sudo pacman -S fuse
 sudo pacman -S file-roller
+sudo pacman -S shotcut
 
 sudo chmod +s /bin/light
 
