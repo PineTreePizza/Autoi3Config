@@ -48,6 +48,8 @@ cd Fonts
 sudo mv pine-fonts /usr/share/fonts/ 
 cd $HOME/Linuxi3Config
 
+mv Wallpapers $HOME/
+
 rm -R $HOME/.config/i3
 mv i3 $HOME/.config/
 
