@@ -89,6 +89,12 @@ sudo mv imgs /
 cd $HOME
 cd AltConfig
 
+cd matter
+
+./matter.py -i arch cog -ff fonts/terminus-font-4.39/ttf/ter-u32n.ttf -fn Termius -fs 32 -hl FFF1E2 -fg 9C6B6B -bg 161313 -ic E9A658
+
+cd $HOME/AltConfig
+
 sudo rm -R /usr/share/themes
 sudo mv themes /usr/share/
 
