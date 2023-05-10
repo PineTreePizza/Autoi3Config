@@ -9,10 +9,9 @@ sudo pacman -S pcmanfm
 sudo pacman -S light
 sudo pacman -S alsa-utils
 sudo pacman -S flameshot
-sudo pacman -S min
 sudo pacman -S neofetch
 sudo pacman -S lxappearance
-sudo pacman -S terminator
+sudo pacman -S alacritty
 sudo pacman -S qbittorrent
 sudo pacman -S steam
 sudo pacman -S discord
@@ -29,6 +28,15 @@ sudo pacman -S fish
 sudo pacman -S obs-studio
 sudo pacman -S fuse
 sudo pacman -S file-roller
+sudo pacman -S putty
+sudo pacman -S peek
+sudo pacman -S btop
+sudo pacman -S libreoffice-fresh
+sudo pacman -S grub-customizer
+sudo pacman -S tmux
+sudo pacman -S vivaldi-ffmpeg-codecs
+sudo pacman -S vivaldi
+sudo pacman -S lightdm-gtk-greeter-settings
 sudo pacman -S shotcut
 
 sudo chmod +s /bin/light
