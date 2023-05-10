@@ -95,6 +95,8 @@ cd matter
 
 cd $HOME/AltConfig
 
+mv openterm.sh $HOME/
+
 sudo rm -R /usr/share/themes
 sudo mv themes /usr/share/
 
