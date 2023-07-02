@@ -1,4 +1,3 @@
-
 #main block
 cd $HOME
 sudo pacman -S rofi
@@ -51,6 +50,10 @@ sudo chmod +s /bin/light
 
 #git builds
 sudo pacman -S --needed base-devel git
+
+git clone https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+sh install.sh
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
